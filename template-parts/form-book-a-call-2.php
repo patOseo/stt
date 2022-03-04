@@ -7,7 +7,7 @@
 	<input type="hidden" name="act" value="sub" data-name="act">
 	<input type="hidden" name="v" value="2" data-name="v">
 	<input type="hidden" name="or" value="4a2a7697b91639516872ac548a125a3e" data-name="or">
-	<input type="hidden" name="field[221]" value="<?php echo $args['btntext']; ?>" data-name="cta_button">
+	<input type="hidden" name="field[221]" value="<?php echo $args['btntext']; ?>" data-name="cta_button" class="cta-button">
 	<div class="_form-content">
 						<div class="form-group mb-3">
 						<label for="fullname" class="_form-label"><strong>Name*</strong></label>
