@@ -61,7 +61,7 @@ $button_link = get_field('button_link');
 
           <?php if($full_width_image != ""): ?>
                 <div class="full_image">
-                    <?php echo wp_get_attachment_image($full_width_image, 'full', '', array('class' => 'full_width_image w-100')); ?>
+                    <?php echo wp_get_attachment_image($full_width_image, 'full', '', array('class' => 'full_width_image w-100 h-auto')); ?>
                 </div>
                   <?php endif; ?>
 
