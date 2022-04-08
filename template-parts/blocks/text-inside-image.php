@@ -14,7 +14,7 @@ $image = get_field('image');
         <div class="course-set">
         <h2><?= $heading; ?></h2></div>
         <div class="img-place">
-            <?php echo wp_get_attachment_image($image, 'full', '', array('class' => 'w-100', 'alt' => $heading)); ?>
+            <?php echo wp_get_attachment_image($image, 'full', '', array('class' => 'w-100 h-auto', 'alt' => $heading)); ?>
             <div class="center-copy">
                 <h2 class="text-uppercase"><?= $description; ?></h2>
             </div>

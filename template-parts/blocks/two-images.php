@@ -28,9 +28,9 @@ $sub_heading = get_field('sub_heading');
 					        $description = get_sub_field('description');
 
 					        ?>
-					   <div class="bg-course"><?php echo wp_get_attachment_image($background_image, 'full', '', array('class' => 'w-100', 'alt' => 'Menu')) ?></div>
+					   <div class="bg-course"><?php echo wp_get_attachment_image($background_image, 'full', '', array('class' => 'w-100 h-100', 'alt' => 'Menu')) ?></div>
 	                    <div class="course-text">
-	                        <div class="menu-logo"><?php echo wp_get_attachment_image($menu_image, 'full', '', array('class' => 'w-100', 'alt' => 'Menu')) ?></div>
+	                        <div class="menu-logo"><?php echo wp_get_attachment_image($menu_image, 'full', '', array('class' => 'w-100 h-100', 'alt' => 'Menu')) ?></div>
 	                        <?= $description; ?>
 	                    </div>
 					       
@@ -60,16 +60,16 @@ $sub_heading = get_field('sub_heading');
 					        $fourth_content = get_sub_field('fourth_content');
 
 					        ?>
-					<div class="bg-course"><?php echo wp_get_attachment_image($background_image, 'full', '', array('class' => 'w-100', 'alt' => 'Menu')) ?></div>
+					<div class="bg-course"><?php echo wp_get_attachment_image($background_image, 'full', '', array('class' => 'w-100 h-100', 'alt' => 'Menu')) ?></div>
                     <div class="course-text">
                         <p><?= $title; ?></p>
-                        <div class="divider"><?php echo wp_get_attachment_image($divider_image, 'full', '', array('class' => 'w-100', 'alt' => 'Divider')) ?></div>
+                        <div class="divider"><?php echo wp_get_attachment_image($divider_image, 'full', '', array('class' => 'w-100 h-100', 'alt' => 'Divider')) ?></div>
                         <h2><?= $second_title; ?></h2>
                         <p><?= $second_content; ?></p>
-                        <div class="divider"><?php echo wp_get_attachment_image($divider_image_two, 'full', '', array('class' => 'w-100', 'alt' => 'Divider')) ?></div>
+                        <div class="divider"><?php echo wp_get_attachment_image($divider_image_two, 'full', '', array('class' => 'w-100 h-100', 'alt' => 'Divider')) ?></div>
                         <h2><?= $third_title; ?></h2>
                         <p><?= $third_content; ?></p>
-                        <div class="divider"><?php echo wp_get_attachment_image($divider_image_three, 'full', '', array('class' => 'w-100', 'alt' => 'Divider')) ?></div>
+                        <div class="divider"><?php echo wp_get_attachment_image($divider_image_three, 'full', '', array('class' => 'w-100 h-100', 'alt' => 'Divider')) ?></div>
                         <h2><?= $fourth_title; ?></h2>
                         <p><?= $fourth_content; ?></p>
                     </div>

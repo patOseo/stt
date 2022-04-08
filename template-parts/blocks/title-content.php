@@ -48,7 +48,7 @@ $button_link = get_field('button_link');
                 <?php if($right_image != ""): ?>
                 <div class="col-lg-5 px-5 px-lg-0 text-center">
                   <?php if(str_contains($section_class, 'compass')) { ?>
-                    <?php echo wp_get_attachment_image($right_image, 'full', '', array('class' => 'right-img px-5 pull-up')); ?>
+                    <?php echo wp_get_attachment_image($right_image, 'full', '', array('class' => 'h-auto right-img px-5 pull-up')); ?>
                   <?php } else { ?>
                     <?php echo wp_get_attachment_image($right_image, 'full', '', array('class' => 'right-img h-auto')); ?>
                   <?php } ?>

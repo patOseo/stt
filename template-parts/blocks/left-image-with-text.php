@@ -21,7 +21,7 @@ $rand = rand(1, 1000);
 
               <?php if($left_image != ""): ?>
                 <div class="col-lg-6 px-5">
-                    <?php echo wp_get_attachment_image($left_image, 'full', '', array('class' => 'left-im w-100 mb-4')); ?>
+                    <?php echo wp_get_attachment_image($left_image, 'full', '', array('class' => 'left-im w-100 h-auto mb-4')); ?>
                 </div>
                   <?php endif; ?>
 
