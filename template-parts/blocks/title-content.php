@@ -50,7 +50,7 @@ $button_link = get_field('button_link');
                   <?php if(str_contains($section_class, 'compass')) { ?>
                     <?php echo wp_get_attachment_image($right_image, 'full', '', array('class' => 'right-img px-5 pull-up')); ?>
                   <?php } else { ?>
-                    <?php echo wp_get_attachment_image($right_image, 'full', '', array('class' => 'right-img')); ?>
+                    <?php echo wp_get_attachment_image($right_image, 'full', '', array('class' => 'right-img h-auto')); ?>
                   <?php } ?>
                 </div>
                   <?php endif; ?>
