@@ -2333,4 +2333,16 @@ body.landing {
   }
 }
 
+.gform_required_legend {
+	display: none;
+}
+
+.gform_button {
+	padding: .5rem 1rem;
+	color: #fff;
+    background-color: #212529;
+    border-color: #212529;
+    border-radius: 4px;
+}
+
 /*# sourceMappingURL=css.css.map */

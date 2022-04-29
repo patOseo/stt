@@ -1,3 +1,6 @@
+<?php gravity_form(3, false, false, false, array(), true); ?>
+
+<!--
 <form method="POST" action="https://learn2.activehosted.com/proc.php" id="_form_61BA206001BC3_" class="_form _form_24 _inline-form  _dark" novalidate="" _lpchecked="1">
 	<input type="hidden" name="u" value="61BA206001BC3" data-name="u">
 	<input type="hidden" name="f" value="24" data-name="f">
@@ -24,3 +27,4 @@
 	</div>
 	<div class="_form-thank-you" style="display:none;"></div>
 	</form>
+-->
