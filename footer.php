@@ -1,3 +1,5 @@
+<?php $random = rand(1, 1000); ?>
+
     <footer class="footer stt-footer">
         <div class="container">
             <div class="row justify-content-center align-items-center">
@@ -24,7 +26,7 @@
                                 <?= $description; ?>
                                 <div class="cta-row mt-4">
                                     <a href="<?= $button_one_link; ?>" class="cta d-inline-flex me-4 white"><?= $button_one; ?></a>
-                                    <a href="<?= $button_link; ?>" class="black cta white-black-text"><?= $button_two; ?></a>
+                                    <a href="#" class="black cta white-black-text text-uppercase" data-bs-toggle="modal" data-bs-target="#bookCallModal2_<?= $random; ?>">Contact Us</a>
                                 </div>
                         <?php endwhile; ?>
                     <?php endif; ?>
@@ -85,6 +87,25 @@
         <h5 class="modal-title" id="certificationModalLabel"><?php the_field('popup_3_title', 'option'); ?></h5>
         <p class="text-dark"><small><?php the_field('popup_3_text', 'option'); ?></small></p><br>
         <?php get_template_part('template-parts/form-certification'); ?>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+   <!-- Modal -->
+<div class="modal fade" id="bookCallModal2_<?= $random; ?>" tabindex="-1" aria-labelledby="bookCallModal2Label_<?php $random; ?>" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close rounded-circle btn-lg" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+      </div>
+      <div class="modal-body px-5">
+        <h5 class="modal-title" id="bookCallModal2Label_<?php $random; ?>"><strong><?php the_field('popup_2_title', 'option'); ?></strong></h5>
+        <p class="text-dark"><small><?php the_field('popup_2_text', 'option'); ?></small></p><br>
+        <div class="position-relative">
+          <?php get_template_part('template-parts/form-book-a-call-2', null, array('btntext' => $button)); ?>
+        </div>
       </div>
       
     </div>

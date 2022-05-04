@@ -35,13 +35,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 <?php
                      $img = get_field('logo', 'option');
+                     $random = rand(1, 1000);
                 ?>
 
                 <?php echo wp_get_attachment_image($img, array('300', '46')); ?></a>
             <div class="align-items-center d-flex flex-grow-1 flex-md-grow-0 justify-content-end main-nav">
                 <ul class="nav text-uppercase cta-nav" id="mainnav">
                     <li><a href="<?php the_field('button_link', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a></li>
-                    <li><a href="<?php the_field('email_link', 'option'); ?>"><?php the_field('email', 'option'); ?></a></li>
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#bookCallModal2_<?= $random; ?>">Contact Us</a></li>
                 </ul>
             </div>
             
@@ -54,3 +55,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </svg>
             </button>
     </header>
+
+
+
+   <!-- Modal -->
+<div class="modal fade" id="bookCallModal2_<?= $random; ?>" tabindex="-1" aria-labelledby="bookCallModal2Label_<?php $random; ?>" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close rounded-circle btn-lg" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+      </div>
+      <div class="modal-body px-5">
+        <h5 class="modal-title" id="bookCallModal2Label_<?php $random; ?>"><strong><?php the_field('popup_2_title', 'option'); ?></strong></h5>
+        <p class="text-dark"><small><?php the_field('popup_2_text', 'option'); ?></small></p><br>
+        <div class="position-relative">
+          <?php get_template_part('template-parts/form-book-a-call-2', null, array('btntext' => $button)); ?>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
