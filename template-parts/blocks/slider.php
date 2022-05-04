@@ -27,13 +27,13 @@ $heading = get_field('heading');
     
 				            <div class="carousel-box">
 							    <div class="bg-img">
-							      	<?php echo wp_get_attachment_image(184, 'full', '', array('alt' => 'Previous Voyages')); ?>
+							      	<?php echo wp_get_attachment_image(184, 'full', '', array('class' => 'w-100 h-auto', 'alt' => 'Previous Voyages')); ?>
 							    </div>
 							    <div class="slider-outer">
 							      	<div class="slider-inner">
 									    <div class="text">
 									      	<div class="logo">
-												<?php echo wp_get_attachment_image($logo, 'full', '', array('class' => 'w-100 mb-4', 'alt' => 'logo')); ?>
+												<?php echo wp_get_attachment_image($logo, 'full', '', array('class' => 'w-100 h-auto mb-4', 'alt' => 'logo')); ?>
 												<h3 class="text-head"><?= $heading; ?></h3>
 											</div>
 											
